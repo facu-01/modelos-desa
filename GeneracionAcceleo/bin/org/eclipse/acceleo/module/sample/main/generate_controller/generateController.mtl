@@ -1,10 +1,10 @@
 [comment encoding = UTF-8 /]
-[module BaseService('')/]
+[module generateController('http://www.example.org/diagramaClasesCompleto')/]
 
-[template public BaseService()]
+[template public generateController()]
 
 [for (c : Clase | Clase.allInstances())]
-[file (c.nombre+'Controller.java', false, 'UTF-8')]
+[file ('src/main/java/com/example/controllers/'+c.nombre+'Controller.java', false, 'UTF-8')]
 package com.example.api.controllers;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,7 +16,7 @@ import com.example.api.services.[c.nombre/]ServiceImpl;
 
 @RestController
 @CrossOrigin(origins = \"*\")
-@RequestMapping(path = "api/v1/"[c.nombre.toString().toLowerCase()/]")
+@RequestMapping(path = "api/v1/[c.nombre.toString().toLowerCase()/]")
 public class [c.nombre/]Controller extends BaseControllerImpl<[c.nombre/], [c.nombre/]ServiceImpl> {
 
 }

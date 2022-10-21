@@ -2,7 +2,7 @@
 [module generaInterfaces('http://www.example.org/diagramaClasesCompleto')]
 
 [import generaOperacion/]
-[import generaAtributos /]
+[import generaAtributos/]
 
 
 [template public generaInterfaces(Raiz : DiagramaClases)]

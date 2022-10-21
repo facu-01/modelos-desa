@@ -1,10 +1,9 @@
 [comment encoding = UTF-8 /]
-[module BaseService('')/]
+[module BaseController('http://www.example.org/diagramaClasesCompleto')/]
 
-[template public BaseService(element : OclAny)]
+[template public baseController()]
 	
-	[comment @main /]
-[file ('BaseController.java', false, 'UTF-8')]
+[file ('src/main/java/com/example/controllers/BaseController.java', false, 'UTF-8')]
 package com.example.api.controllers;
 
 import java.io.Serializable;
@@ -27,7 +26,7 @@ public interface BaseController <E extends Base,ID extends Serializable> {
 	
 }
 [/file]
-[file ('BaseControllerImpl.java', false, 'UTF-8')]
+[file ('src/main/java/com/example/controllers/BaseControllerImpl.java', false, 'UTF-8')]
 package com.example.api.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
