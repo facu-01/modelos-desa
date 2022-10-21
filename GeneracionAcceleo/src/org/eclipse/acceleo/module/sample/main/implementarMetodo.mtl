@@ -1,0 +1,34 @@
+[comment encoding = UTF-8 /]
+[module implementarMetodo('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public implementarMetodo(c : Clase)]
+[for (it : Interface | c.realizaciones_contenidas.destino)]
+[for (op : Operacion | it.operaciones_contenidas->asBag()->select(o | o.esAbstracta))]
+
+[op.visibilidad/] [op.tipoRetorno/] [op.nombre/]([for (pcont : Atributo | op.parametros_contenidos) separator (',')] [pcont.tipo/] [pcont.nombre/][/for]) { 
+	[if (op.tipoRetorno=TipoRetorno::int)]
+ 	return 0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::double)]
+ 	return 0.0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::float)]
+ 	return 0.0F;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::char)]
+ 	return '';
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::byte)]
+ 	return 0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::boolean)]
+ 	return false;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::String)]
+ 	return null;
+	[/if]
+}
+[/for]
+[/for]
+[/template]

@@ -1,0 +1,18 @@
+[comment encoding = UTF-8 /]
+[module generate1('http://www.example.org/diagramaClasesCompleto')]
+
+[import generaPom /]
+[import generaInterfaces /]
+[import generaClases /]
+[import generaMain /]
+
+
+
+[template public generate1Element(Raiz : DiagramaClases)]
+[comment @main/]
+[generaPom()/]
+[generaInterfaces()/]
+[generaClases()/]
+[generaMain()/]
+[/template]
+

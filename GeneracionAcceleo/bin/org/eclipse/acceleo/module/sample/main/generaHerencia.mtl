@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generaHerencia('http://www.example.org/diagramaClasesCompleto')]
+
+[import generaOperacion/]
+[import generaAtributos /]
+
+
+[template public generaHerencia(c : Clasificador )]
+[for (h : Herencia | c.herencias_contenidas)][if (h.origen = c )] extends [h.destino.nombre/][/if][/for]
+[/template]

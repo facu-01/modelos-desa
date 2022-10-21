@@ -1,0 +1,31 @@
+[comment encoding = UTF-8 /]
+[module generaOperacion('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generaOperacion(op : Operacion)]
+	[if (op.esAbstracta)][op.visibilidad/] abstract [if (op.esFinal)]final [/if] [if (op.esEstatico)]static [/if][op.tipoRetorno/] [op.nombre/]([for (pcont : Atributo | op.parametros_contenidos) separator (',')] [pcont.tipo/] [pcont.nombre/][/for]);[/if]
+[if (op.esAbstracta = false)][op.visibilidad/] [if (op.esFinal)]final [/if] [if (op.esEstatico)]static [/if] [op.tipoRetorno/] [op.nombre/]([for (pcont : Atributo | op.parametros_contenidos) separator (',')] [pcont.tipo/] [pcont.nombre/][/for]) { 
+	[if (op.tipoRetorno=TipoRetorno::int)]
+ 	return 0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::double)]
+ 	return 0.0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::float)]
+ 	return 0.0F;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::char)]
+ 	return '';
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::byte)]
+ 	return 0;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::boolean)]
+ 	return false;
+	[/if]
+	[if (op.tipoRetorno=TipoRetorno::String)]
+ 	return null;
+	[/if]
+}
+[/if]
+[/template]

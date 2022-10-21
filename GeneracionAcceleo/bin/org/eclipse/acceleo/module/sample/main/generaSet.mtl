@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module generaSet('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generaSet(c : Clase)]
+	[for (i : Atributo | c.atributos_contenidos)]
+	public void set[i.nombre/]([i.tipo/] [i.nombre/]){
+	this.[i.nombre/] = [i.nombre/];
+	} 	
+
+	[/for]	
+[/template]

@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module generaRealizaciones('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generaRealizaciones(c : Clase)]
+[for (rl : Realizacion | c.realizaciones_contenidas) separator (',')] implements [rl.destino.nombre/][/for]
+[/template]

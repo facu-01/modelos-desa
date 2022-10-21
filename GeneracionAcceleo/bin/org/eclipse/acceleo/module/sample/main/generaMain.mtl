@@ -1,0 +1,21 @@
+[comment encoding = UTF-8 /]
+[module generaMain('http://www.example.org/diagramaClasesCompleto')]
+
+[template public generaMain()]
+[file ('src/main/java/com/example/Main.java', false, 'UTF-8')]
+package Main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Main {
+
+    public static void main(String args) {
+        SpringApplication.run(main.class, args);
+    }
+
+
+}
+[/file]
+[/template]
