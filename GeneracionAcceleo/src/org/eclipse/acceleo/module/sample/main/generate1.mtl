@@ -7,6 +7,8 @@
 [import generaMain /]
 [import BaseController /]
 [import generateController /]
+[import BaseService /]
+[import BaseServiceImpl /]
 
 
 
@@ -18,4 +20,6 @@
 [generaMain()/]
 [baseController()/]
 [generateController()/]
+[baseService()/]
+[baseServiceImpl()/]
 [/template]

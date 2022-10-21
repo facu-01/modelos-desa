@@ -1,10 +1,9 @@
 [comment encoding = UTF-8 /]
-[module BaseService('')/]
+[module BaseService('http://www.example.org/diagramaClasesCompleto')/]
 
-[template public BaseService(element : OclAny)]
+[template public baseService()]
 	
-	[comment @main /]
-[file ('BaseService.java'), false, 'UTF-8')]
+[file ('src/main/java/com/example/services/BaseService.java', false, 'UTF-8')]
 package com.example.api.services;
 
 import java.io.Serializable;
@@ -26,7 +25,7 @@ public interface BaseService<E extends Base, ID extends Serializable> {
 }		
 [/file]
 
-[file ('BaseServiceImpl.java'), false, 'UTF-8')]
+[file ('src/main/java/com/example/services/BaseServiceImpl.java'), false, 'UTF-8')]
 package com.example.api.services;
 
 import java.io.Serializable;

@@ -1,0 +1,39 @@
+[comment encoding = UTF-8 /]
+[module BaseServiceImpl('http://www.example.org/diagramaClasesCompleto')/]
+
+[template public baseServiceImpl()]
+
+[for (c : Clase | Clase.allInstances())]
+[file ('src/main/java/com/example/services/'+c.nombre+'Service.java', false, 'UTF-8')]
+package com.example.api.services;
+
+import com.example.api.entities.[c.nombre/];
+
+public interface [c.nombre/]Service extends BaseService<[c.nombre/], Long> {
+
+}
+[/file]
+[file ('src/main/java/com/example/services/'+c.nombre+'ServiceImpl.java', false, 'UTF-8')]
+package com.example.api.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.api.entities.[c.nombre/];
+import com.example.api.repositories.[c.nombre/]Repository;
+import com.example.api.repositories.BaseRepository;
+
+@Service
+public class [c.nombre/]ServiceImpl extends BaseServiceImpl<[c.nombre/], Long> implements [c.nombre/]Service{
+
+	@Autowired
+	private [c.nombre/]Repository [c.nombre.toString().toLowerCase()/]Repository;
+	
+	public [c.nombre/]ServiceImpl(BaseRepository<[c.nombre/], Long> baseRepository){
+		super(baseRepository);
+	}
+}
+[/file]
+[/for]
+	
+[/template]
