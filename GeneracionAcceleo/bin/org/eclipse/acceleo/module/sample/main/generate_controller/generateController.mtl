@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[module BaseService('')/]
+
+[template public BaseService()]
+
+[for (c : Clase | Clase.allInstances())]
+[file (c.nombre+'Controller.java', false, 'UTF-8')]
+package com.example.api.controllers;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.api.entities.[c.nombre/];
+import com.example.api.services.[c.nombre/]ServiceImpl;
+
+@RestController
+@CrossOrigin(origins = \"*\")
+@RequestMapping(path = "api/v1/"[c.nombre.toString().toLowerCase()/]")
+public class [c.nombre/]Controller extends BaseControllerImpl<[c.nombre/], [c.nombre/]ServiceImpl> {
+
+}
+[/file]
+[/for]
+	
+[/template]

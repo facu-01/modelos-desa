@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="BaseService" nsURI="org::eclipse::acceleo::module::sample::main::generate_controller::BaseController" startHeaderPosition="29" endHeaderPosition="52">
+    <input/>
+    <ownedModuleElement xsi:type="mtl:Template" name="BaseService" visibility="Public" main="true">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package com.example.api.controllers;&#xA;&#xA;import java.io.Serializable;&#xA;&#xA;import org.springframework.data.domain.Pageable;&#xA;import org.springframework.http.ResponseEntity;&#xA;import org.springframework.web.bind.annotation.PathVariable;&#xA;import org.springframework.web.bind.annotation.RequestBody;&#xA;&#xA;import com.example.api.entities.Base;&#xA;&#xA;public interface BaseController &lt;E extends Base,ID extends Serializable> {&#xA;&#xA;&#x9;public ResponseEntity&lt;?> getAll();&#xA;&#x9;public ResponseEntity&lt;?> getAll(Pageable pageable);&#xA;&#x9;public ResponseEntity&lt;?> getOne(@PathVariable ID id);&#xA;&#x9;public ResponseEntity&lt;?> save(@RequestBody E entity);&#xA;&#x9;public ResponseEntity&lt;?> update(@PathVariable ID id, @RequestBody E entity);&#xA;&#x9;public ResponseEntity&lt;?> delete(@PathVariable ID id);&#xA;&#x9;&#xA;}&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="BaseController.java">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package com.example.api.controllers;&#xA;&#xA;import org.springframework.beans.factory.annotation.Autowired;&#xA;import org.springframework.data.domain.Pageable;&#xA;import org.springframework.http.HttpStatus;&#xA;import org.springframework.http.ResponseEntity;&#xA;import org.springframework.web.bind.annotation.DeleteMapping;&#xA;import org.springframework.web.bind.annotation.GetMapping;&#xA;import org.springframework.web.bind.annotation.PathVariable;&#xA;import org.springframework.web.bind.annotation.PostMapping;&#xA;import org.springframework.web.bind.annotation.PutMapping;&#xA;import org.springframework.web.bind.annotation.RequestBody;&#xA;&#xA;import com.example.api.entities.Base;&#xA;import com.example.api.services.BaseServiceImpl;&#xA;&#xA;public abstract class BaseControllerImpl&lt;E extends Base, S extends BaseServiceImpl&lt;E, Long>> implements BaseController&lt;E, Long>{&#xA;&#xA;&#x9;@Autowired&#xA;&#x9;protected S servicio;&#xA;&#x9;&#xA;&#x9;@GetMapping(&quot;&quot;)&#xA;&#x9;public ResponseEntity&lt;?> getAll(){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll());&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;@GetMapping(&quot;/paged&quot;)&#xA;&#x9;public ResponseEntity&lt;?> getAll(Pageable pageable){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll(pageable));&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;@GetMapping(&quot;/{id}&quot;)&#xA;&#x9;public ResponseEntity&lt;?> getOne(@PathVariable Long id){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.OK).body(servicio.findById(id));&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.NOT_FOUND).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;@PostMapping(&quot;&quot;)&#xA;&#x9;public ResponseEntity&lt;?> save(@RequestBody E entity){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.OK).body(servicio.save(entity));&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;@PutMapping(&quot;/{id}&quot;)&#xA;&#x9;public ResponseEntity&lt;?> update(@PathVariable Long id, @RequestBody E entity){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.OK).body(servicio.update(id, entity));&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;@DeleteMapping(&quot;/{id}&quot;)&#xA;&#x9;public ResponseEntity&lt;?> delete(@PathVariable Long id){&#xA;&#x9;&#x9;try {&#xA;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.NO_CONTENT).body(servicio.delete(id));&#xA;&#xA;&#x9;&#x9;} catch(Exception e) {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;{\&quot;error\&quot;:\&quot;Error. Por favor intente más tarde.\&quot;}&quot;);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;}&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="BaseControllerImpl.java">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <parameter name="element">
+        <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="BaseService">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/BaseService"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="element">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/BaseService">
+      <details key="start" value="56"/>
+      <details key="end" value="3794"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/BaseService/%">
+      <details key="start" value="104"/>
+      <details key="end" value="106"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/BaseService/%.1">
+      <details key="start" value="125"/>
+      <details key="end" value="917"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/BaseService/%.1/%">
+      <details key="start" value="172"/>
+      <details key="end" value="910"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/BaseService/%.1/%.1">
+      <details key="start" value="132"/>
+      <details key="end" value="153"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/BaseService/%.1/%.2">
+      <details key="start" value="162"/>
+      <details key="end" value="169"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/BaseService/%.2">
+      <details key="start" value="918"/>
+      <details key="end" value="3780"/>
+      <details key="line" value="30"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/BaseService/%.2/%">
+      <details key="start" value="969"/>
+      <details key="end" value="3773"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/BaseService/%.2/%.1">
+      <details key="start" value="925"/>
+      <details key="end" value="950"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/BaseService/%.2/%.2">
+      <details key="start" value="959"/>
+      <details key="end" value="966"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/BaseService/%.3">
+      <details key="start" value="3781"/>
+      <details key="end" value="3782"/>
+      <details key="line" value="132"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/BaseService/element">
+      <details key="start" value="85"/>
+      <details key="end" value="101"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

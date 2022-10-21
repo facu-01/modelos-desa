@@ -5,8 +5,8 @@
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
     <imports href="generaPom.emtl#/0"/>
-    <imports href="generaInterfaces.emtl#/0"/>
-    <imports href="generaClases.emtl#/0"/>
+    <imports href="generate_interfaces/generaInterfaces.emtl#/0"/>
+    <imports href="generador_clases/generaClases.emtl#/0"/>
     <imports href="generaMain.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generate1Element" visibility="Public" main="true">
       <body xsi:type="mtl:TemplateInvocation">
@@ -19,7 +19,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="generaInterfaces.emtl#/0/generaInterfaces"/>
+        <definition href="generate_interfaces/generaInterfaces.emtl#/0/generaInterfaces"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/7">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
@@ -27,7 +27,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="generaClases.emtl#/0/generaClases"/>
+        <definition href="generador_clases/generaClases.emtl#/0/generaClases"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/8">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
@@ -89,7 +89,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="generaInterfaces.emtl#/0/generaInterfaces"/>
+          <references href="generate_interfaces/generaInterfaces.emtl#/0/generaInterfaces"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="Raiz">
@@ -101,7 +101,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="generaClases.emtl#/0/generaClases"/>
+          <references href="generador_clases/generaClases.emtl#/0/generaClases"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
       </eOperations>
