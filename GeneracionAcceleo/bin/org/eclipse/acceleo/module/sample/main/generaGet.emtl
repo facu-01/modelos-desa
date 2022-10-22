@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generaGet" nsURI="org::eclipse::acceleo::module::sample::main::generaGet" startHeaderPosition="29" endHeaderPosition="209">
+  <mtl:Module name="generaGet" nsURI="org::eclipse::acceleo::module::sample::main::generaGet" startHeaderPosition="30" endHeaderPosition="216">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generaGet" visibility="Public">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;public "/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
@@ -26,7 +26,7 @@
             <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
           </source>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="() {&#xA;        return "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="() {&#xD;&#xA;        return "/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generaGet/%.1/a">
@@ -34,7 +34,7 @@
           </source>
           <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/diagramaClasesCompleto#//Retornable/nombre"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;   &#x9; }&#xA;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;   &#x9; }&#xD;&#xA;&#xD;&#xA;"/>
         <loopVariable name="a">
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Atributo"/>
         </loopVariable>
@@ -154,93 +154,93 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generaGet">
-      <details key="start" value="99"/>
-      <details key="end" value="301"/>
+      <details key="start" value="103"/>
+      <details key="end" value="313"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generaGet/%">
-      <details key="start" value="142"/>
-      <details key="end" value="143"/>
+      <details key="start" value="147"/>
+      <details key="end" value="149"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generaGet/%.1">
-      <details key="start" value="143"/>
-      <details key="end" value="288"/>
+      <details key="start" value="149"/>
+      <details key="end" value="299"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generaGet/%.1/%">
-      <details key="start" value="193"/>
-      <details key="end" value="202"/>
+      <details key="start" value="200"/>
+      <details key="end" value="209"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generaGet/%.1/%.1">
-      <details key="start" value="203"/>
-      <details key="end" value="209"/>
+      <details key="start" value="210"/>
+      <details key="end" value="216"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generaGet/%.1/%.1/a">
-      <details key="start" value="203"/>
-      <details key="end" value="204"/>
+      <details key="start" value="210"/>
+      <details key="end" value="211"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generaGet/%.1/%.2">
-      <details key="start" value="211"/>
-      <details key="end" value="215"/>
+      <details key="start" value="218"/>
+      <details key="end" value="222"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generaGet/%.1/%.3">
-      <details key="start" value="216"/>
-      <details key="end" value="239"/>
+      <details key="start" value="223"/>
+      <details key="end" value="246"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generaGet/%.1/%.3/%">
-      <details key="start" value="216"/>
-      <details key="end" value="224"/>
+      <details key="start" value="223"/>
+      <details key="end" value="231"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generaGet/%.1/%.3/%/a">
-      <details key="start" value="216"/>
-      <details key="end" value="217"/>
+      <details key="start" value="223"/>
+      <details key="end" value="224"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generaGet/%.1/%.4">
-      <details key="start" value="241"/>
-      <details key="end" value="261"/>
+      <details key="start" value="248"/>
+      <details key="end" value="269"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generaGet/%.1/%.5">
-      <details key="start" value="262"/>
-      <details key="end" value="270"/>
+      <details key="start" value="270"/>
+      <details key="end" value="278"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generaGet/%.1/%.5/a">
-      <details key="start" value="262"/>
-      <details key="end" value="263"/>
+      <details key="start" value="270"/>
+      <details key="end" value="271"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generaGet/%.1/%.6">
-      <details key="start" value="272"/>
-      <details key="end" value="282"/>
+      <details key="start" value="280"/>
+      <details key="end" value="293"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generaGet/%.1/a">
-      <details key="start" value="149"/>
-      <details key="end" value="161"/>
+      <details key="start" value="155"/>
+      <details key="end" value="167"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generaGet/%.1/%.7">
-      <details key="start" value="164"/>
-      <details key="end" value="190"/>
+      <details key="start" value="170"/>
+      <details key="end" value="196"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generaGet/%.1/%.7/clase">
-      <details key="start" value="164"/>
-      <details key="end" value="169"/>
+      <details key="start" value="170"/>
+      <details key="end" value="175"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/generaGet/clase">
-      <details key="start" value="126"/>
-      <details key="end" value="139"/>
+      <details key="start" value="130"/>
+      <details key="end" value="143"/>
       <details key="line" value="5"/>
     </eAnnotations>
   </ecore:EAnnotation>

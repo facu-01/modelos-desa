@@ -12,6 +12,7 @@
 [import generaConstructorSobrecargado/]
 [import implementarMetodo/]
 [import generaHerencia/]
+[import generaRepository /]
 
 [template public generaClases()]
 [for (p : Paquete | Paquete.allInstances())]
@@ -29,6 +30,8 @@ import org.hibernate.envers.Audited;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+[generaRepository(c)/]
 
 @Entity
 @Table(name = "[c.nombre.toLower()/]")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generate1" nsURI="org::eclipse::acceleo::module::sample::main::generate1" startHeaderPosition="29" endHeaderPosition="116">
+  <mtl:Module name="generate1" nsURI="org::eclipse::acceleo::module::sample::main::generate1" startHeaderPosition="30" endHeaderPosition="119">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
@@ -16,7 +16,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="generaInterfaces.emtl#/0/generaInterfaces"/>
@@ -24,7 +24,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="generaClases.emtl#/0/generaClases"/>
@@ -32,7 +32,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//DiagramaClases"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="generaMain.emtl#/0/generaMain"/>
@@ -170,13 +170,13 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generate1Element">
-      <details key="start" value="196"/>
-      <details key="end" value="353"/>
+      <details key="start" value="206"/>
+      <details key="end" value="369"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generate1Element/%">
-      <details key="start" value="272"/>
-      <details key="end" value="283"/>
+      <details key="start" value="284"/>
+      <details key="end" value="295"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generate1Element/%/self">
@@ -185,13 +185,13 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generate1Element/%.1">
-      <details key="start" value="285"/>
-      <details key="end" value="286"/>
+      <details key="start" value="297"/>
+      <details key="end" value="299"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generate1Element/%.2">
-      <details key="start" value="287"/>
-      <details key="end" value="305"/>
+      <details key="start" value="300"/>
+      <details key="end" value="318"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generate1Element/%.2/self">
@@ -200,13 +200,13 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generate1Element/%.3">
-      <details key="start" value="307"/>
-      <details key="end" value="308"/>
+      <details key="start" value="320"/>
+      <details key="end" value="322"/>
       <details key="line" value="15"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generate1Element/%.4">
-      <details key="start" value="309"/>
-      <details key="end" value="323"/>
+      <details key="start" value="323"/>
+      <details key="end" value="337"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generate1Element/%.4/self">
@@ -215,13 +215,13 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generate1Element/%.5">
-      <details key="start" value="325"/>
-      <details key="end" value="326"/>
+      <details key="start" value="339"/>
+      <details key="end" value="341"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generate1Element/%.6">
-      <details key="start" value="327"/>
-      <details key="end" value="339"/>
+      <details key="start" value="342"/>
+      <details key="end" value="354"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generate1Element/%.6/self">
@@ -230,8 +230,8 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generate1Element/Raiz">
-      <details key="start" value="230"/>
-      <details key="end" value="251"/>
+      <details key="start" value="240"/>
+      <details key="end" value="261"/>
       <details key="line" value="11"/>
     </eAnnotations>
   </ecore:EAnnotation>

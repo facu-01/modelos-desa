@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generaMain" nsURI="org::eclipse::acceleo::module::sample::main::generaMain" startHeaderPosition="29" endHeaderPosition="-1">
+  <mtl:Module name="generaMain" nsURI="org::eclipse::acceleo::module::sample::main::generaMain" startHeaderPosition="30" endHeaderPosition="432">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generaMain" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package Main;&#xA;&#xA;import org.springframework.boot.SpringApplication;&#xA;import org.springframework.boot.autoconfigure.SpringBootApplication;&#xA;&#xA;@SpringBootApplication&#xA;public class Main {&#xA;&#xA;    public static void main(String args) {&#xA;        SpringApplication.run(main.class, args);&#xA;    }&#xA;&#xA;&#xA;}&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package com.example;&#xD;&#xA;&#xD;&#xA;import org.springframework.boot.SpringApplication;&#xD;&#xA;import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;&#xA;&#xD;&#xA;@SpringBootApplication&#xD;&#xA;public class Main {&#xD;&#xA;&#xD;&#xA;    public static void main(String"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" args) {&#xD;&#xA;        SpringApplication.run(Main.class, args);&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main/java/com/example/Main.java">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
@@ -80,30 +84,43 @@
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generaMain">
-      <details key="start" value="99"/>
-      <details key="end" value="494"/>
+      <details key="start" value="102"/>
+      <details key="end" value="528"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generaMain/%">
-      <details key="start" value="130"/>
-      <details key="end" value="482"/>
+      <details key="start" value="134"/>
+      <details key="end" value="515"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generaMain/%/%">
-      <details key="start" value="193"/>
-      <details key="end" value="475"/>
+      <details key="start" value="198"/>
+      <details key="end" value="427"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generaMain/%/%.1">
-      <details key="start" value="137"/>
-      <details key="end" value="174"/>
+      <details key="start" value="428"/>
+      <details key="end" value="432"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generaMain/%/%.2">
-      <details key="start" value="183"/>
-      <details key="end" value="190"/>
+      <details key="start" value="434"/>
+      <details key="end" value="508"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generaMain/%/%.3">
+      <details key="start" value="141"/>
+      <details key="end" value="178"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generaMain/%/%.4">
+      <details key="start" value="187"/>
+      <details key="end" value="194"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

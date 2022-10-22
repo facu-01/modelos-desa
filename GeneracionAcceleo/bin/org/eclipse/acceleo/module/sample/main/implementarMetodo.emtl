@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="implementarMetodo" nsURI="org::eclipse::acceleo::module::sample::main::implementarMetodo" startHeaderPosition="29" endHeaderPosition="317">
+  <mtl:Module name="implementarMetodo" nsURI="org::eclipse::acceleo::module::sample::main::implementarMetodo" startHeaderPosition="30" endHeaderPosition="325">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="implementarMetodo" visibility="Public">
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:ForBlock">
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ecore:EEnum" href="http://www.example.org/diagramaClasesCompleto#//ModicadoresAcceso"/>
             <source xsi:type="ocl.ecore:VariableExp" name="op" referredVariable="/0/implementarMetodo/%/%/op">
@@ -62,9 +62,9 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             </each>
           </body>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") { &#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") { &#xD;&#xA;"/>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -82,7 +82,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0.0;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0.0;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -100,7 +100,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0.0F;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0.0F;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -118,7 +118,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return '';&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return '';&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -136,7 +136,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return 0;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -154,7 +154,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return false;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return false;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -172,7 +172,7 @@
             </ifExpr>
           </body>
           <body xsi:type="mtl:IfBlock">
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return null;&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#x9;return null;&#xD;&#xA;"/>
             <ifExpr xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
@@ -189,7 +189,7 @@
               <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
             </ifExpr>
           </body>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}&#xD;&#xA;"/>
           <loopVariable name="op">
             <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Operacion"/>
           </loopVariable>
@@ -408,408 +408,408 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/implementarMetodo">
-      <details key="start" value="107"/>
-      <details key="end" value="926"/>
+      <details key="start" value="111"/>
+      <details key="end" value="959"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/implementarMetodo/%">
-      <details key="start" value="154"/>
-      <details key="end" value="914"/>
+      <details key="start" value="159"/>
+      <details key="end" value="946"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/implementarMetodo/%/%">
-      <details key="start" value="214"/>
-      <details key="end" value="907"/>
+      <details key="start" value="220"/>
+      <details key="end" value="938"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/implementarMetodo/%/%/%">
-      <details key="start" value="301"/>
-      <details key="end" value="302"/>
+      <details key="start" value="308"/>
+      <details key="end" value="310"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/implementarMetodo/%/%/%.1">
-      <details key="start" value="303"/>
-      <details key="end" value="317"/>
+      <details key="start" value="311"/>
+      <details key="end" value="325"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/implementarMetodo/%/%/%.1/op">
-      <details key="start" value="303"/>
-      <details key="end" value="305"/>
+      <details key="start" value="311"/>
+      <details key="end" value="313"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/implementarMetodo/%/%/%.2">
-      <details key="start" value="319"/>
-      <details key="end" value="320"/>
+      <details key="start" value="327"/>
+      <details key="end" value="328"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/implementarMetodo/%/%/%.3">
-      <details key="start" value="321"/>
-      <details key="end" value="335"/>
+      <details key="start" value="329"/>
+      <details key="end" value="343"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/implementarMetodo/%/%/%.3/op">
-      <details key="start" value="321"/>
-      <details key="end" value="323"/>
+      <details key="start" value="329"/>
+      <details key="end" value="331"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/implementarMetodo/%/%/%.4">
-      <details key="start" value="337"/>
-      <details key="end" value="338"/>
+      <details key="start" value="345"/>
+      <details key="end" value="346"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/implementarMetodo/%/%/%.5">
-      <details key="start" value="339"/>
-      <details key="end" value="348"/>
+      <details key="start" value="347"/>
+      <details key="end" value="356"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/implementarMetodo/%/%/%.5/op">
-      <details key="start" value="339"/>
-      <details key="end" value="341"/>
+      <details key="start" value="347"/>
+      <details key="end" value="349"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/implementarMetodo/%/%/%.6">
-      <details key="start" value="350"/>
-      <details key="end" value="351"/>
+      <details key="start" value="358"/>
+      <details key="end" value="359"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/implementarMetodo/%/%/%.7">
-      <details key="start" value="351"/>
-      <details key="end" value="454"/>
+      <details key="start" value="359"/>
+      <details key="end" value="462"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/implementarMetodo/%/%/%.7/%">
-      <details key="start" value="418"/>
-      <details key="end" value="419"/>
+      <details key="start" value="426"/>
+      <details key="end" value="427"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/implementarMetodo/%/%/%.7/%.1">
-      <details key="start" value="420"/>
-      <details key="end" value="430"/>
+      <details key="start" value="428"/>
+      <details key="end" value="438"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/implementarMetodo/%/%/%.7/%.1/pcont">
-      <details key="start" value="420"/>
-      <details key="end" value="425"/>
+      <details key="start" value="428"/>
+      <details key="end" value="433"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/implementarMetodo/%/%/%.7/%.2">
-      <details key="start" value="432"/>
-      <details key="end" value="433"/>
+      <details key="start" value="440"/>
+      <details key="end" value="441"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/implementarMetodo/%/%/%.7/%.3">
-      <details key="start" value="434"/>
-      <details key="end" value="446"/>
+      <details key="start" value="442"/>
+      <details key="end" value="454"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/implementarMetodo/%/%/%.7/%.3/pcont">
-      <details key="start" value="434"/>
-      <details key="end" value="439"/>
+      <details key="start" value="442"/>
+      <details key="end" value="447"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/implementarMetodo/%/%/%.7/pcont">
-      <details key="start" value="357"/>
-      <details key="end" value="373"/>
+      <details key="start" value="365"/>
+      <details key="end" value="381"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/implementarMetodo/%/%/%.7/%.4">
-      <details key="start" value="376"/>
-      <details key="end" value="400"/>
+      <details key="start" value="384"/>
+      <details key="end" value="408"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/implementarMetodo/%/%/%.7/%.4/op">
-      <details key="start" value="376"/>
-      <details key="end" value="378"/>
+      <details key="start" value="384"/>
+      <details key="end" value="386"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/implementarMetodo/%/%/%.7/%.5">
-      <details key="start" value="413"/>
-      <details key="end" value="416"/>
+      <details key="start" value="421"/>
+      <details key="end" value="424"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/implementarMetodo/%/%/%.8">
-      <details key="start" value="454"/>
-      <details key="end" value="459"/>
+      <details key="start" value="462"/>
+      <details key="end" value="468"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/implementarMetodo/%/%/%.9">
-      <details key="start" value="460"/>
-      <details key="end" value="517"/>
+      <details key="start" value="469"/>
+      <details key="end" value="528"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/implementarMetodo/%/%/%.9/%">
-      <details key="start" value="499"/>
-      <details key="end" value="511"/>
+      <details key="start" value="509"/>
+      <details key="end" value="522"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/implementarMetodo/%/%/%.9/%.1">
-      <details key="start" value="464"/>
-      <details key="end" value="497"/>
+      <details key="start" value="473"/>
+      <details key="end" value="506"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/implementarMetodo/%/%/%.9/%.1/%">
-      <details key="start" value="465"/>
-      <details key="end" value="479"/>
+      <details key="start" value="474"/>
+      <details key="end" value="488"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/implementarMetodo/%/%/%.9/%.1/%/op">
-      <details key="start" value="465"/>
-      <details key="end" value="467"/>
+      <details key="start" value="474"/>
+      <details key="end" value="476"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.30" references="/0/implementarMetodo/%/%/%.9/%.1/%.1">
-      <details key="start" value="480"/>
-      <details key="end" value="496"/>
+      <details key="start" value="489"/>
+      <details key="end" value="505"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.31" references="/0/implementarMetodo/%/%/%.10">
-      <details key="start" value="519"/>
-      <details key="end" value="581"/>
+      <details key="start" value="531"/>
+      <details key="end" value="595"/>
       <details key="line" value="13"/>
     </eAnnotations>
     <eAnnotations source="positions.32" references="/0/implementarMetodo/%/%/%.10/%">
-      <details key="start" value="561"/>
-      <details key="end" value="575"/>
+      <details key="start" value="574"/>
+      <details key="end" value="589"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/implementarMetodo/%/%/%.10/%.1">
-      <details key="start" value="523"/>
-      <details key="end" value="559"/>
+      <details key="start" value="535"/>
+      <details key="end" value="571"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/implementarMetodo/%/%/%.10/%.1/%">
-      <details key="start" value="524"/>
-      <details key="end" value="538"/>
+      <details key="start" value="536"/>
+      <details key="end" value="550"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/implementarMetodo/%/%/%.10/%.1/%/op">
-      <details key="start" value="524"/>
-      <details key="end" value="526"/>
+      <details key="start" value="536"/>
+      <details key="end" value="538"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/implementarMetodo/%/%/%.10/%.1/%.1">
-      <details key="start" value="539"/>
-      <details key="end" value="558"/>
+      <details key="start" value="551"/>
+      <details key="end" value="570"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/implementarMetodo/%/%/%.11">
-      <details key="start" value="583"/>
-      <details key="end" value="645"/>
+      <details key="start" value="598"/>
+      <details key="end" value="662"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.38" references="/0/implementarMetodo/%/%/%.11/%">
-      <details key="start" value="624"/>
-      <details key="end" value="639"/>
+      <details key="start" value="640"/>
+      <details key="end" value="656"/>
       <details key="line" value="17"/>
     </eAnnotations>
     <eAnnotations source="positions.39" references="/0/implementarMetodo/%/%/%.11/%.1">
-      <details key="start" value="587"/>
-      <details key="end" value="622"/>
+      <details key="start" value="602"/>
+      <details key="end" value="637"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.40" references="/0/implementarMetodo/%/%/%.11/%.1/%">
-      <details key="start" value="588"/>
-      <details key="end" value="602"/>
+      <details key="start" value="603"/>
+      <details key="end" value="617"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.41" references="/0/implementarMetodo/%/%/%.11/%.1/%/op">
-      <details key="start" value="588"/>
-      <details key="end" value="590"/>
+      <details key="start" value="603"/>
+      <details key="end" value="605"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.42" references="/0/implementarMetodo/%/%/%.11/%.1/%.1">
-      <details key="start" value="603"/>
-      <details key="end" value="621"/>
+      <details key="start" value="618"/>
+      <details key="end" value="636"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.43" references="/0/implementarMetodo/%/%/%.12">
-      <details key="start" value="647"/>
-      <details key="end" value="706"/>
+      <details key="start" value="665"/>
+      <details key="end" value="726"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.44" references="/0/implementarMetodo/%/%/%.12/%">
-      <details key="start" value="687"/>
-      <details key="end" value="700"/>
+      <details key="start" value="706"/>
+      <details key="end" value="720"/>
       <details key="line" value="20"/>
     </eAnnotations>
     <eAnnotations source="positions.45" references="/0/implementarMetodo/%/%/%.12/%.1">
-      <details key="start" value="651"/>
-      <details key="end" value="685"/>
+      <details key="start" value="669"/>
+      <details key="end" value="703"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.46" references="/0/implementarMetodo/%/%/%.12/%.1/%">
-      <details key="start" value="652"/>
-      <details key="end" value="666"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/implementarMetodo/%/%/%.12/%.1/%/op">
-      <details key="start" value="652"/>
-      <details key="end" value="654"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/implementarMetodo/%/%/%.12/%.1/%.1">
-      <details key="start" value="667"/>
+      <details key="start" value="670"/>
       <details key="end" value="684"/>
       <details key="line" value="0"/>
     </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/implementarMetodo/%/%/%.12/%.1/%/op">
+      <details key="start" value="670"/>
+      <details key="end" value="672"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/implementarMetodo/%/%/%.12/%.1/%.1">
+      <details key="start" value="685"/>
+      <details key="end" value="702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
     <eAnnotations source="positions.49" references="/0/implementarMetodo/%/%/%.13">
-      <details key="start" value="708"/>
-      <details key="end" value="766"/>
+      <details key="start" value="729"/>
+      <details key="end" value="789"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.50" references="/0/implementarMetodo/%/%/%.13/%">
-      <details key="start" value="748"/>
-      <details key="end" value="760"/>
+      <details key="start" value="770"/>
+      <details key="end" value="783"/>
       <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.51" references="/0/implementarMetodo/%/%/%.13/%.1">
-      <details key="start" value="712"/>
-      <details key="end" value="746"/>
+      <details key="start" value="733"/>
+      <details key="end" value="767"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.52" references="/0/implementarMetodo/%/%/%.13/%.1/%">
-      <details key="start" value="713"/>
-      <details key="end" value="727"/>
+      <details key="start" value="734"/>
+      <details key="end" value="748"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.53" references="/0/implementarMetodo/%/%/%.13/%.1/%/op">
-      <details key="start" value="713"/>
-      <details key="end" value="715"/>
+      <details key="start" value="734"/>
+      <details key="end" value="736"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.54" references="/0/implementarMetodo/%/%/%.13/%.1/%.1">
-      <details key="start" value="728"/>
-      <details key="end" value="745"/>
+      <details key="start" value="749"/>
+      <details key="end" value="766"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.55" references="/0/implementarMetodo/%/%/%.14">
-      <details key="start" value="768"/>
-      <details key="end" value="833"/>
+      <details key="start" value="792"/>
+      <details key="end" value="859"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.56" references="/0/implementarMetodo/%/%/%.14/%">
-      <details key="start" value="811"/>
-      <details key="end" value="827"/>
+      <details key="start" value="836"/>
+      <details key="end" value="853"/>
       <details key="line" value="26"/>
     </eAnnotations>
     <eAnnotations source="positions.57" references="/0/implementarMetodo/%/%/%.14/%.1">
-      <details key="start" value="772"/>
-      <details key="end" value="809"/>
+      <details key="start" value="796"/>
+      <details key="end" value="833"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.58" references="/0/implementarMetodo/%/%/%.14/%.1/%">
-      <details key="start" value="773"/>
-      <details key="end" value="787"/>
+      <details key="start" value="797"/>
+      <details key="end" value="811"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.59" references="/0/implementarMetodo/%/%/%.14/%.1/%/op">
-      <details key="start" value="773"/>
-      <details key="end" value="775"/>
+      <details key="start" value="797"/>
+      <details key="end" value="799"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.60" references="/0/implementarMetodo/%/%/%.14/%.1/%.1">
-      <details key="start" value="788"/>
-      <details key="end" value="808"/>
+      <details key="start" value="812"/>
+      <details key="end" value="832"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.61" references="/0/implementarMetodo/%/%/%.15">
-      <details key="start" value="835"/>
-      <details key="end" value="898"/>
+      <details key="start" value="862"/>
+      <details key="end" value="927"/>
       <details key="line" value="28"/>
     </eAnnotations>
     <eAnnotations source="positions.62" references="/0/implementarMetodo/%/%/%.15/%">
-      <details key="start" value="877"/>
-      <details key="end" value="892"/>
+      <details key="start" value="905"/>
+      <details key="end" value="921"/>
       <details key="line" value="29"/>
     </eAnnotations>
     <eAnnotations source="positions.63" references="/0/implementarMetodo/%/%/%.15/%.1">
-      <details key="start" value="839"/>
-      <details key="end" value="875"/>
+      <details key="start" value="866"/>
+      <details key="end" value="902"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.64" references="/0/implementarMetodo/%/%/%.15/%.1/%">
-      <details key="start" value="840"/>
-      <details key="end" value="854"/>
+      <details key="start" value="867"/>
+      <details key="end" value="881"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.65" references="/0/implementarMetodo/%/%/%.15/%.1/%/op">
-      <details key="start" value="840"/>
-      <details key="end" value="842"/>
+      <details key="start" value="867"/>
+      <details key="end" value="869"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.66" references="/0/implementarMetodo/%/%/%.15/%.1/%.1">
-      <details key="start" value="855"/>
-      <details key="end" value="874"/>
+      <details key="start" value="882"/>
+      <details key="end" value="901"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.67" references="/0/implementarMetodo/%/%/%.16">
-      <details key="start" value="899"/>
-      <details key="end" value="901"/>
+      <details key="start" value="929"/>
+      <details key="end" value="932"/>
       <details key="line" value="31"/>
     </eAnnotations>
     <eAnnotations source="positions.68" references="/0/implementarMetodo/%/%/op">
-      <details key="start" value="220"/>
-      <details key="end" value="234"/>
+      <details key="start" value="226"/>
+      <details key="end" value="240"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.69" references="/0/implementarMetodo/%/%/select">
-      <details key="start" value="237"/>
-      <details key="end" value="298"/>
+      <details key="start" value="243"/>
+      <details key="end" value="304"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.70" references="/0/implementarMetodo/%/%/select/%">
-      <details key="start" value="237"/>
-      <details key="end" value="271"/>
+      <details key="start" value="243"/>
+      <details key="end" value="277"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.71" references="/0/implementarMetodo/%/%/select/%/%">
-      <details key="start" value="237"/>
-      <details key="end" value="262"/>
+      <details key="start" value="243"/>
+      <details key="end" value="268"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.72" references="/0/implementarMetodo/%/%/select/%/%/it">
-      <details key="start" value="237"/>
-      <details key="end" value="239"/>
+      <details key="start" value="243"/>
+      <details key="end" value="245"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.73" references="/0/implementarMetodo/%/%/select/%.1">
-      <details key="start" value="284"/>
-      <details key="end" value="297"/>
+      <details key="start" value="290"/>
+      <details key="end" value="303"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.74" references="/0/implementarMetodo/%/%/select/%.1/o">
-      <details key="start" value="284"/>
-      <details key="end" value="285"/>
+      <details key="start" value="290"/>
+      <details key="end" value="291"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.75" references="/0/implementarMetodo/%/%/select/o">
-      <details key="start" value="280"/>
-      <details key="end" value="281"/>
+      <details key="start" value="286"/>
+      <details key="end" value="287"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.76" references="/0/implementarMetodo/%/it">
-      <details key="start" value="160"/>
-      <details key="end" value="174"/>
+      <details key="start" value="165"/>
+      <details key="end" value="179"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.77" references="/0/implementarMetodo/%/collect">
-      <details key="start" value="177"/>
-      <details key="end" value="211"/>
+      <details key="start" value="182"/>
+      <details key="end" value="216"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.78" references="/0/implementarMetodo/%/collect/%">
-      <details key="start" value="177"/>
-      <details key="end" value="203"/>
+      <details key="start" value="182"/>
+      <details key="end" value="208"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.79" references="/0/implementarMetodo/%/collect/%/c">
-      <details key="start" value="177"/>
-      <details key="end" value="178"/>
+      <details key="start" value="182"/>
+      <details key="end" value="183"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.80" references="/0/implementarMetodo/%/collect/%.1">
-      <details key="start" value="204"/>
-      <details key="end" value="211"/>
+      <details key="start" value="209"/>
+      <details key="end" value="216"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.81" references="/0/implementarMetodo/%/collect/%.1/temp1">
@@ -823,8 +823,8 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.83" references="/0/implementarMetodo/c">
-      <details key="start" value="142"/>
-      <details key="end" value="151"/>
+      <details key="start" value="146"/>
+      <details key="end" value="155"/>
       <details key="line" value="5"/>
     </eAnnotations>
   </ecore:EAnnotation>

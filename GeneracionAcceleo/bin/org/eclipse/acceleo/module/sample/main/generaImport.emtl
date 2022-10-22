@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generaImport" nsURI="org::eclipse::acceleo::module::sample::main::generaImport" startHeaderPosition="29" endHeaderPosition="-1">
+  <mtl:Module name="generaImport" nsURI="org::eclipse::acceleo::module::sample::main::generaImport" startHeaderPosition="30" endHeaderPosition="-1">
     <input>
       <takesTypesFrom href="http://www.example.org/diagramaClasesCompleto#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generaImport" visibility="Public">
       <body xsi:type="mtl:IfBlock">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="import java.util.List;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="import java.util.List;&#xD;&#xA;"/>
         <ifExpr xsi:type="ocl.ecore:IteratorExp" name="exists">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="ocl.ecore:IteratorExp" name="select" eType="/6/Bag(Relacion)">
@@ -77,7 +77,7 @@
         </ifExpr>
       </body>
       <body xsi:type="mtl:IfBlock">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;import javax.persistence.Id;&#xA;&#x9;import javax.persistence.GeneratedValue;&#xA;&#x9;import javax.persistence.GenerationType;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;import javax.persistence.Id;&#xD;&#xA;&#x9;import javax.persistence.GeneratedValue;&#xD;&#xA;&#x9;import javax.persistence.GenerationType;&#xD;&#xA;"/>
         <ifExpr xsi:type="ocl.ecore:IteratorExp" name="exists">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="ocl.ecore:OperationCallExp" eType="/6/Bag(Atributo)">
@@ -108,7 +108,7 @@
           </iterator>
         </ifExpr>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <parameter name="c">
         <eType xsi:type="ecore:EClass" href="http://www.example.org/diagramaClasesCompleto#//Clase"/>
       </parameter>
@@ -208,183 +208,183 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generaImport">
-      <details key="start" value="102"/>
-      <details key="end" value="528"/>
+      <details key="start" value="106"/>
+      <details key="end" value="542"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generaImport/%">
-      <details key="start" value="144"/>
-      <details key="end" value="331"/>
+      <details key="start" value="149"/>
+      <details key="end" value="338"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generaImport/%/%">
-      <details key="start" value="303"/>
-      <details key="end" value="326"/>
+      <details key="start" value="309"/>
+      <details key="end" value="333"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generaImport/%/exists">
-      <details key="start" value="148"/>
-      <details key="end" value="301"/>
+      <details key="start" value="153"/>
+      <details key="end" value="306"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generaImport/%/exists/select">
-      <details key="start" value="149"/>
-      <details key="end" value="203"/>
+      <details key="start" value="154"/>
+      <details key="end" value="208"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generaImport/%/exists/select/%">
-      <details key="start" value="149"/>
-      <details key="end" value="181"/>
+      <details key="start" value="154"/>
+      <details key="end" value="186"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generaImport/%/exists/select/%/%">
-      <details key="start" value="149"/>
-      <details key="end" value="172"/>
+      <details key="start" value="154"/>
+      <details key="end" value="177"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generaImport/%/exists/select/%/%/c">
-      <details key="start" value="149"/>
-      <details key="end" value="150"/>
+      <details key="start" value="154"/>
+      <details key="end" value="155"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generaImport/%/exists/select/%.1">
-      <details key="start" value="192"/>
-      <details key="end" value="202"/>
+      <details key="start" value="197"/>
+      <details key="end" value="207"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generaImport/%/exists/select/%.1/%">
-      <details key="start" value="192"/>
-      <details key="end" value="200"/>
+      <details key="start" value="197"/>
+      <details key="end" value="205"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generaImport/%/exists/select/%.1/%/r">
-      <details key="start" value="192"/>
-      <details key="end" value="193"/>
+      <details key="start" value="197"/>
+      <details key="end" value="198"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generaImport/%/exists/select/%.1/c">
-      <details key="start" value="201"/>
-      <details key="end" value="202"/>
+      <details key="start" value="206"/>
+      <details key="end" value="207"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generaImport/%/exists/select/r">
-      <details key="start" value="190"/>
-      <details key="end" value="191"/>
+      <details key="start" value="195"/>
+      <details key="end" value="196"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generaImport/%/exists/%">
-      <details key="start" value="214"/>
-      <details key="end" value="299"/>
+      <details key="start" value="219"/>
+      <details key="end" value="304"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generaImport/%/exists/%/%">
-      <details key="start" value="214"/>
-      <details key="end" value="255"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/generaImport/%/exists/%/%/%">
-      <details key="start" value="214"/>
-      <details key="end" value="229"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generaImport/%/exists/%/%/%/r">
-      <details key="start" value="214"/>
-      <details key="end" value="215"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generaImport/%/exists/%/%/%.1">
-      <details key="start" value="230"/>
-      <details key="end" value="255"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generaImport/%/exists/%/%.1">
-      <details key="start" value="259"/>
-      <details key="end" value="299"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generaImport/%/exists/%/%.1/%">
-      <details key="start" value="259"/>
-      <details key="end" value="274"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/generaImport/%/exists/%/%.1/%/r">
-      <details key="start" value="259"/>
+      <details key="start" value="219"/>
       <details key="end" value="260"/>
       <details key="line" value="0"/>
     </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generaImport/%/exists/%/%/%">
+      <details key="start" value="219"/>
+      <details key="end" value="234"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generaImport/%/exists/%/%/%/r">
+      <details key="start" value="219"/>
+      <details key="end" value="220"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generaImport/%/exists/%/%/%.1">
+      <details key="start" value="235"/>
+      <details key="end" value="260"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generaImport/%/exists/%/%.1">
+      <details key="start" value="264"/>
+      <details key="end" value="304"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generaImport/%/exists/%/%.1/%">
+      <details key="start" value="264"/>
+      <details key="end" value="279"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generaImport/%/exists/%/%.1/%/r">
+      <details key="start" value="264"/>
+      <details key="end" value="265"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generaImport/%/exists/%/%.1/%.1">
-      <details key="start" value="275"/>
-      <details key="end" value="299"/>
+      <details key="start" value="280"/>
+      <details key="end" value="304"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generaImport/%/exists/r">
-      <details key="start" value="212"/>
-      <details key="end" value="213"/>
+      <details key="start" value="217"/>
+      <details key="end" value="218"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/generaImport/%.1">
-      <details key="start" value="332"/>
-      <details key="end" value="515"/>
+      <details key="start" value="340"/>
+      <details key="end" value="527"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generaImport/%.1/%">
-      <details key="start" value="396"/>
-      <details key="end" value="510"/>
+      <details key="start" value="405"/>
+      <details key="end" value="522"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generaImport/%.1/exists">
-      <details key="start" value="336"/>
-      <details key="end" value="394"/>
+      <details key="start" value="344"/>
+      <details key="end" value="402"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generaImport/%.1/exists/%">
-      <details key="start" value="337"/>
-      <details key="end" value="368"/>
+      <details key="start" value="345"/>
+      <details key="end" value="376"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/generaImport/%.1/exists/%/%">
-      <details key="start" value="337"/>
-      <details key="end" value="359"/>
+      <details key="start" value="345"/>
+      <details key="end" value="367"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/generaImport/%.1/exists/%/%/c">
-      <details key="start" value="337"/>
-      <details key="end" value="338"/>
+      <details key="start" value="345"/>
+      <details key="end" value="346"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/generaImport/%.1/exists/%.1">
-      <details key="start" value="379"/>
-      <details key="end" value="392"/>
+      <details key="start" value="387"/>
+      <details key="end" value="400"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.30" references="/0/generaImport/%.1/exists/%.1/%">
-      <details key="start" value="379"/>
-      <details key="end" value="387"/>
+      <details key="start" value="387"/>
+      <details key="end" value="395"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.31" references="/0/generaImport/%.1/exists/%.1/%/p">
-      <details key="start" value="379"/>
-      <details key="end" value="380"/>
+      <details key="start" value="387"/>
+      <details key="end" value="388"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.32" references="/0/generaImport/%.1/exists/%.1/%.1">
-      <details key="start" value="388"/>
-      <details key="end" value="392"/>
+      <details key="start" value="396"/>
+      <details key="end" value="400"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/generaImport/%.1/exists/p">
-      <details key="start" value="377"/>
-      <details key="end" value="378"/>
+      <details key="start" value="385"/>
+      <details key="end" value="386"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/generaImport/%.2">
-      <details key="start" value="516"/>
-      <details key="end" value="517"/>
+      <details key="start" value="529"/>
+      <details key="end" value="531"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/generaImport/c">
-      <details key="start" value="132"/>
-      <details key="end" value="141"/>
+      <details key="start" value="136"/>
+      <details key="end" value="145"/>
       <details key="line" value="5"/>
     </eAnnotations>
   </ecore:EAnnotation>
