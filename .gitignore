@@ -1,4 +1,7 @@
 /.metadata/
-/.DiagramaCompleto/bin/
+DiagramaCompleto/bin/
 /.GeneracionAcceleo/bin/
-/.GeneracionAcceleo/tasks
+GeneracionAcceleo/tasks
+GeneracionAcceleo/bin/
+
+GeneracionAcceleo/generated/

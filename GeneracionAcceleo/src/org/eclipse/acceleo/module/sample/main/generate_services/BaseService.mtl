@@ -25,7 +25,7 @@ public interface BaseService<E extends Base, ID extends Serializable> {
 }		
 [/file]
 
-[file ('src/main/java/com/example/services/BaseServiceImpl.java'), false, 'UTF-8')]
+[file ('src/main/java/com/example/services/BaseServiceImpl.java', false, 'UTF-8')]
 package com.example.api.services;
 
 import java.io.Serializable;

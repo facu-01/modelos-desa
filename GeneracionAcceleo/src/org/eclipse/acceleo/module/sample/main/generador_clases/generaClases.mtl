@@ -6,7 +6,6 @@
 [import generaImport/]
 [import generaRealizaciones/]
 [import generaRelaciones/]
-[import generaConstructorSobrecargado/]
 [import generaSet/]
 [import generaGet/]
 [import generaConstructorSobrecargado/]
