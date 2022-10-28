@@ -5,6 +5,10 @@
 [import generaInterfaces /]
 [import generaClases /]
 [import generaMain /]
+[import BaseController /]
+[import generateController /]
+[import BaseService /]
+[import BaseServiceImpl /]
 
 
 
@@ -14,5 +18,8 @@
 [generaInterfaces()/]
 [generaClases()/]
 [generaMain()/]
+[baseController()/]
+[generateController()/]
+[baseService()/]
+[baseServiceImpl()/]
 [/template]
-

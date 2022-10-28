@@ -1,0 +1,28 @@
+[comment encoding = UTF-8 /]
+[module generaInterfaces('http://www.example.org/diagramaClasesCompleto')]
+
+[import generaOperacion/]
+[import generaAtributos/]
+
+
+[template public generaInterfaces(Raiz : DiagramaClases)]
+[for (p : Paquete | Paquete.allInstances())]
+[for (it : Interface | Interface.allInstances())]
+[file ('src/main/java/com/example/'+p.nombre+'/'+it.nombre+'.java', false, 'UTF-8')]
+package com.example.[p.nombre/];
+public interface [it.nombre/] {
+
+	[generaAtributos(it)/]
+
+[for (op : Operacion | it.operaciones_contenidas)]
+	[generaOperacion(op)/]
+[/for]
+	
+	
+}
+
+[/file]
+
+[/for]
+[/for]
+[/template]
