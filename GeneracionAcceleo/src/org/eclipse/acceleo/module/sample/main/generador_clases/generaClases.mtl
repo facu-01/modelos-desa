@@ -1,0 +1,74 @@
+[comment encoding = UTF-8 /]
+[module generaClases('http://www.example.org/diagramaClasesCompleto')]
+
+[import generaOperacion/]
+[import generaAtributos /]
+[import generaImport/]
+[import generaRealizaciones/]
+[import generaRelaciones/]
+[import generaSet/]
+[import generaGet/]
+[import generaConstructorSobrecargado/]
+[import implementarMetodo/]
+[import generaHerencia/]
+[import generaRepository /]
+
+[template public generaClases()]
+[for (p : Paquete | Paquete.allInstances())]
+[for (c : Clase | Clase.allInstances())]
+[file ('src/main/java/com/example/'+p.nombre+'/'+c.nombre+'.java', false, 'UTF-8')]
+package com.example.[p.nombre/];
+
+[generaImport(c)/]
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+[generaRepository(c)/]
+
+@Entity
+@Table(name = "[c.nombre.toLower()/]")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Audited
+public class [c.nombre/][generaHerencia(c)/][generaRealizaciones(c)/] {
+
+[generaAtributos(c)/]
+
+[generaRelaciones(c)/]
+
+	public [c.nombre/]([if (c.herencias_contenidas->size() > 0)][if (c.herencias_contenidas->first().origen = c )][for (at : Atributo | c.herencias_contenidas->first().destino.atributos_contenidos) separator (',')][at.tipo/] [at.nombre/][/for][/if][/if]){
+	[if (c.herencias_contenidas->size() > 0)]
+	[if (c.herencias_contenidas->first().origen = c )]
+		super([for (at : Atributo | c.herencias_contenidas->first().destino.atributos_contenidos) separator (',')][at.nombre/][/for]);
+	[/if]
+	[/if]
+	}
+
+[generaConstructorSobrecargado(c)/]
+
+[generaSet(c)/]
+
+[generaGet(c)/]
+
+[for (op : Operacion | c.operaciones_contenidas)]
+	[generaOperacion(op)/]
+[/for]
+
+[implementarMetodo(c)/]
+
+}	
+
+[/file]
+[/for]
+
+[/for]
+[/template]

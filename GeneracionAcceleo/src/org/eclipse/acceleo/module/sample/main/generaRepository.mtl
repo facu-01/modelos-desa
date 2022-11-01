@@ -1,0 +1,28 @@
+[comment encoding = UTF-8 /]
+[module generaRepository('http://www.example.org/diagramaClasesCompleto')]
+
+
+[template public generaRepository(c : Clase)]
+[file ('src/main/java/com/example/repositories/'+c.nombre+'Repository.java', false, 'UTF-8')]
+package ['com.example.repositories;'/]
+
+import com.example.entities.[c.nombre/];
+[if (c.nombre='Base')]
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.NoRepositoryBean;
+
+import java.io.Serializable;
+
+@NoRepositoryBean
+public interface BaseRepository <E extends Base, ID extends Serializable> extends JpaRepository<E, ID> {
+[else]
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface [c.nombre/]Repository extends BaseRepository<[c.nombre/], Long> {
+[/if]
+}
+[/file]
+[/template]

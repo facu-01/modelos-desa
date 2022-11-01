@@ -6,7 +6,7 @@
     xmlns:diagramaClasesCompleto="http://www.example.org/diagramaClasesCompleto"
     xsi:schemaLocation="http://www.example.org/diagramaClasesCompleto diagramaClasesCompleto.ecore">
   <paquetes_contenidos
-      nombre="Facturacion">
+      nombre="entities">
     <clasificadores_contenidos
         xsi:type="diagramaClasesCompleto:Clase"
         nombre="Factura">

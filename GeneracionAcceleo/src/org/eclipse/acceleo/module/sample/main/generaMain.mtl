@@ -3,7 +3,7 @@
 
 [template public generaMain()]
 [file ('src/main/java/com/example/Main.java', false, 'UTF-8')]
-package Main;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Main {
 
-    public static void main(String args) {
-        SpringApplication.run(main.class, args);
+    public static void main(String['[]'/] args) {
+        SpringApplication.run(Main.class, args);
     }
 
 
