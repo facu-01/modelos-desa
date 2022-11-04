@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generate1('http://www.example.org/diagramaClasesCompleto')]
+[module generate1('http://www.example.org/diagramaCompletoV2')]
 
 [import generaPom /]
 [import generaInterfaces /]
@@ -9,6 +9,7 @@
 [import generateController /]
 [import BaseService /]
 [import BaseServiceImpl /]
+[import BaseRepository /]
 
 
 
@@ -18,8 +19,9 @@
 [generaInterfaces()/]
 [generaClases()/]
 [generaMain()/]
-[comment baseController()/]
+[baseRepository()/]
+[baseController()/]
 [generateController()/]
-[comment baseService()/]
+[baseService()/]
 [baseServiceImpl()/]
 [/template]

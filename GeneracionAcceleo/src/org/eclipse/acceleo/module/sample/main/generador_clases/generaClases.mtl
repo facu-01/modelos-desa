@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generaClases('http://www.example.org/diagramaClasesCompleto')]
+[module generaClases('http://www.example.org/diagramaCompletoV2')]
 
 [import generaOperacion/]
 [import generaAtributos /]
@@ -30,7 +30,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+[if (not c.esAbstracta)]
 [generaRepository(c)/]
+[/if]
 
 @Entity
 @Table(name = "[c.nombre.toLower()/]")
@@ -39,7 +41,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Audited
-public class [c.nombre/][generaHerencia(c)/][generaRealizaciones(c)/] {
+public[if (c.esAbstracta)] abstract[/if] class [c.nombre/][generaHerencia(c)/][generaRealizaciones(c)/] {
 
 [generaAtributos(c)/]
 

@@ -2,9 +2,10 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_1aETsFmBEe2-d_buxdO0nA" selectedViews="_1iAHsFmBEe2-d_buxdO0nA" version="15.0.0.202201261500">
     <semanticResources>diagramaCompletoV2.ecore</semanticResources>
+    <semanticResources>DiagramaClases.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_1iAHsFmBEe2-d_buxdO0nA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1lDbsFmBEe2-d_buxdO0nA" name="diagramaCompletoV2" repPath="#_1jeHUFmBEe2-d_buxdO0nA" changeId="854e6d9e-96b8-434d-9229-128595d67686">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1lDbsFmBEe2-d_buxdO0nA" name="diagramaCompletoV2" repPath="#_1jeHUFmBEe2-d_buxdO0nA" changeId="28a17dc4-27b3-4d37-881b-cfe0c63dc296">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="diagramaCompletoV2.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -384,7 +385,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_DwwagFmEEe2pzu5B3ArdTg" type="4001" element="_DwqT5lmEEe2pzu5B3ArdTg" source="__VAA4FmDEe2pzu5B3ArdTg" target="_QRXQ0FmDEe2pzu5B3ArdTg">
           <children xmi:type="notation:Node" xmi:id="_DwwahFmEEe2pzu5B3ArdTg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DwwahVmEEe2pzu5B3ArdTg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DwwahVmEEe2pzu5B3ArdTg" x="-45" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_DwwahlmEEe2pzu5B3ArdTg" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dwwah1mEEe2pzu5B3ArdTg" y="10"/>
@@ -400,7 +401,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_FKVckFmEEe2pzu5B3ArdTg" type="4001" element="_FKRyNlmEEe2pzu5B3ArdTg" source="__VAA4FmDEe2pzu5B3ArdTg" target="_QRXQ0FmDEe2pzu5B3ArdTg">
           <children xmi:type="notation:Node" xmi:id="_FKVclFmEEe2pzu5B3ArdTg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FKVclVmEEe2pzu5B3ArdTg" x="21"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FKVclVmEEe2pzu5B3ArdTg" x="39" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_FKVcllmEEe2pzu5B3ArdTg" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FKVcl1mEEe2pzu5B3ArdTg" x="-9" y="78"/>
@@ -1062,9 +1063,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_FKRyNlmEEe2pzu5B3ArdTg" name="[0..1] clasificador" sourceNode="__U8WgFmDEe2pzu5B3ArdTg" targetNode="_QRVboFmDEe2pzu5B3ArdTg">
-      <target xmi:type="ecore:EReference" href="diagramaCompletoV2.ecore#//Herencia/clasificador"/>
-      <semanticElements xmi:type="ecore:EReference" href="diagramaCompletoV2.ecore#//Herencia/clasificador"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_FKRyNlmEEe2pzu5B3ArdTg" name="[0..1] destino" sourceNode="__U8WgFmDEe2pzu5B3ArdTg" targetNode="_QRVboFmDEe2pzu5B3ArdTg">
+      <target xmi:type="ecore:EReference" href="diagramaCompletoV2.ecore#//Herencia/destino"/>
+      <semanticElements xmi:type="ecore:EReference" href="diagramaCompletoV2.ecore#//Herencia/destino"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_FKRyN1mEEe2pzu5B3ArdTg" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_FKRyOVmEEe2pzu5B3ArdTg" showIcon="false">

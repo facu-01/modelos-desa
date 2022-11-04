@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module implementarMetodo('http://www.example.org/diagramaClasesCompleto')]
+[module implementarMetodo('http://www.example.org/diagramaCompletoV2')]
 
 
 [template public implementarMetodo(c : Clase)]

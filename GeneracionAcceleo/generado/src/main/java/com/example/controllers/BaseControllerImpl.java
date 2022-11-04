@@ -1,32 +1,3 @@
-[comment encoding = UTF-8 /]
-[module BaseController('http://www.example.org/diagramaCompletoV2')/]
-
-[template public baseController()]
-	
-[file ('src/main/java/com/example/controllers/BaseController.java', false, 'UTF-8')]
-package com.example.api.controllers;
-
-import java.io.Serializable;
-
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-
-import com.example.api.entities.Base;
-
-public interface BaseController <E extends Base,ID extends Serializable> {
-
-	public ResponseEntity<?> getAll();
-	public ResponseEntity<?> getAll(Pageable pageable);
-	public ResponseEntity<?> getOne(@PathVariable ID id);
-	public ResponseEntity<?> save(@RequestBody E entity);
-	public ResponseEntity<?> update(@PathVariable ID id, @RequestBody E entity);
-	public ResponseEntity<?> delete(@PathVariable ID id);
-	
-}
-[/file]
-[file ('src/main/java/com/example/controllers/BaseControllerImpl.java', false, 'UTF-8')]
 package com.example.api.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -127,6 +98,3 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
 	}
 	
 }
-[/file]
-	
-[/template]

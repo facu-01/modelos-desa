@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generaOperacion('http://www.example.org/diagramaClasesCompleto')]
+[module generaOperacion('http://www.example.org/diagramaCompletoV2')]
 
 
 [template public generaOperacion(op : Operacion)]

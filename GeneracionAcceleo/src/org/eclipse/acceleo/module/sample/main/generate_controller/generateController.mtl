@@ -1,9 +1,9 @@
 [comment encoding = UTF-8 /]
-[module generateController('http://www.example.org/diagramaClasesCompleto')/]
+[module generateController('http://www.example.org/diagramaCompletoV2')/]
 
 [template public generateController()]
 
-[for (c : Clase | Clase.allInstances())]
+[for (c : Clase | Clase.allInstances()->asSequence()->select(c : Clase | not c.esAbstracta))]
 [file ('src/main/java/com/example/controllers/'+c.nombre+'Controller.java', false, 'UTF-8')]
 package com.example.api.controllers;
 

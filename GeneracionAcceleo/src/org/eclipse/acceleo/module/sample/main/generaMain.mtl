@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generaMain('http://www.example.org/diagramaClasesCompleto')]
+[module generaMain('http://www.example.org/diagramaCompletoV2')]
 
 [template public generaMain()]
 [file ('src/main/java/com/example/Main.java', false, 'UTF-8')]

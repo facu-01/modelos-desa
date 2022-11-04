@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramaCompletoV2:DiagramaClases
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diagramaCompletoV2="http://www.example.org/diagramaCompletoV2"
+    xsi:schemaLocation="http://www.example.org/diagramaCompletoV2 diagramaCompletoV2.ecore">
+  <paquetes_contenidos
+      nombre="test">
+    <clasificadores_contenidos
+        xsi:type="diagramaCompletoV2:Interface"
+        nombre="interface_01">
+      <operaciones_contenidas
+          nombre="decepcionante_01"
+          visibilidad="public"
+          esEstatico="true"
+          tipoRetorno="int"/>
+      <atributos_contenidos
+          nombre="valor_01"
+          visibilidad="public"
+          esFinal="true"/>
+    </clasificadores_contenidos>
+    <clasificadores_contenidos
+        xsi:type="diagramaCompletoV2:Clase"
+        nombre="clasePadre_01"
+        esAbstracta="true"/>
+    <clasificadores_contenidos
+        xsi:type="diagramaCompletoV2:Clase"
+        nombre="claseHijo_01">
+      <herencias_contenidas
+          origen="//@paquetes_contenidos.0/@clasificadores_contenidos.2"
+          destino="//@paquetes_contenidos.0/@clasificadores_contenidos.1"/>
+      <realizaciones_contenidas
+          destino="//@paquetes_contenidos.0/@clasificadores_contenidos.0"
+          origen="//@paquetes_contenidos.0/@clasificadores_contenidos.2"/>
+    </clasificadores_contenidos>
+  </paquetes_contenidos>
+</diagramaCompletoV2:DiagramaClases>

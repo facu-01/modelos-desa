@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generaAtributos('http://www.example.org/diagramaClasesCompleto')]
+[module generaAtributos('http://www.example.org/diagramaCompletoV2')]
 
 
 [template public generaAtributos(c : Clasificador)]
